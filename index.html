@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <!-- Start header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo@2x.png" alt="" />
+              <div class="logo-name">
+                <h2>Weatehr</h2>
+                <small>Tagline goes here</small>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <nav class="navbar">
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Live Cameras</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <!-- Start Main -->
+    <main class="main">
+      <div class="search">
+        <div class="container">
+          <form class="find-location">
+            <input type="text" placeholder="Find Your location" id="search" />
+            <input type="submit" value="Find" id="submit" />
+          </form>
+        </div>
+      </div>
+      <div class="forecasts">
+        <div class="container">
+          <div class="row">
+            <div class="forecast">
+              <div class="forecast-header">
+                <div class="row">
+                  <p id="today" class="day"></p>
+                  <p id="date" class="date"></p>
+                </div>
+              </div>
+              <div class="forecast-body">
+                <p class="city" id="city"></p>
+                <div class="forecast-degree">
+                  <span
+                    class="degree-num today-degree"
+                    id="today-degree"
+                  ></span>
+                  <div class="degree-icon"><img id="degree-icon" /></div>
+                </div>
+                <p class="custom" id="custom-today"></p>
+                <div class="forecast-info">
+                  <span
+                    ><img height="20px" src="images\icon-umberella.png" alt="" />
+                    20%</span
+                  >
+                  <span
+                    ><img height="20px" src="images/icon-wind.png" alt="" />
+                    18km/h</span
+                  >
+                  <span
+                    ><img height="20px" src="images/icon-compass.png" alt="" />
+                    East</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <p id="tomorrow" class="day text-center"></p>
+              </div>
+              <div class="forecast-body">
+                <div class="text-center img">
+                  <img id="tomorrow-icon" alt="" />
+                </div>
+                <div class="text-center">
+                  <p class="degree"><span id="tommorow-degree-max"></span></p>
+                  <p class="degree-min">
+                    <span id="tommorow-degree-min"></span>
+                  </p>
+                </div>
+                <div>
+                  <p class="custom" id="tomorrow-custom">custom</p>
+                </div>
+              </div>
+            </div>
+            <div class="forecast">
+              <div class="forecast-header">
+                <p id="nextTomorrow" class="day text-center"></p>
+              </div>
+              <div class="forecast-body">
+                <div class="img">
+                  <img class="degree-icon" id="after-tomorrow-icon" alt="" />
+                </div>
+                <div class="text-center">
+                  <p class="degree">
+                    <span id="after-tommorow-degree-max"></span>
+                  </p>
+                  <p class="degree-min">
+                    <span id="after-tommorow-degree-min"></span>
+                  </p>
+                </div>
+                <small class="custom" id="customAfterTomorrow"></small>
+              </div>
+              <i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <form action="">
+            <div class="input-group">
+              <input
+                type="search"
+                placeholder="Enter Your Email to subscribe"
+              />
+              <input type="submit" value="Find" id="submit" />
+            </div>
+          </form>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="rights">
+          Copyright 2021 Company name. Designed by Hamza Nouh. All rights
+          reserved
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+  </body>
+</html>

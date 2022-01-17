@@ -1,0 +1,171 @@
+/* Start main */
+
+.main {
+  background: url("images/banner.png") no-repeat;
+  background-color: #1e202b;
+  padding: 50px 0;
+  form {
+    position: relative;
+    margin-bottom: 60px;
+    input:first-child {
+      width: 100%;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      padding: 20px;
+      color: white;
+      background-color: #1e202b;
+    }
+    input:last-child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+      padding: 15px 40px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      background-color: #009ad8;
+      color: white;
+      cursor: pointer;
+      font-weight: lighter;
+    }
+  }
+  .forecasts {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    .forecast-header {
+      color: #bfc1c8;
+      font-weight: lighter;
+      font-size: 14px;
+      padding: 14px;
+    }
+
+    .forecast:first-child .forecast-header,
+    .forecast:last-child .forecast-header {
+      background-color: #2d303d;
+    }
+
+    .forecast:first-child .forecast-header {
+      border-top-left-radius: 10px;
+    }
+
+    .forecast:first-child .forecast-body .city {
+      color: rgb(191, 193, 200);
+      font-size: 18px;
+      margin-bottom: 2rem;
+    }
+
+    .forecast:nth-child(2) .forecast-header {
+      background-color: #222530;
+    }
+
+    .forecast:last-child .forecast-header {
+      border-top-right-radius: 10px;
+    }
+
+    .forecast .forecast-body {
+      height: 300px;
+    }
+
+    .forecast:first-child .forecast-body {
+      border-bottom-left-radius: 10px;
+    }
+
+    .forecast:first-child .forecast-body .forecast-info span {
+      padding-right: 10px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .forecast .forecast-body .forecast-info img {
+      padding-right: 4px;
+    }
+
+    .forecast:first-child .forecast-body,
+    .forecast:last-child .forecast-body {
+      background-color: #323544;
+      padding: 25px 20px;
+    }
+
+    .forecast:not(:first-child) .forecast-body,
+    .forecast:last-child .forecast-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .forecast:not(:first-child) .forecast-body .degree {
+      font-weight: bolder;
+      font-size: 1.5rem;
+      padding-bottom: 10px;
+    }
+
+    .forecast:not(:first-child) .forecast-body .img {
+      padding-bottom: 20px;
+    }
+
+    .forecast:nth-child(2) .forecast-body {
+      background-color: rgb(38, 41, 54);
+      padding: 25px 20px;
+    }
+
+    .forecast:last-child .forecast-body {
+      border-bottom-right-radius: 10px;
+    }
+
+    .forecast .forecast-body .forecast-degree {
+      margin-bottom: 1rem;
+    }
+
+    .forecast .forecast-body .forecast-degree .degree-num.today-degree {
+      color: white;
+      font-size: 6rem;
+      font-weight: 700;
+    }
+
+    .forecast .forecast-body .forecast-degree {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .forecast .forecast-body .forecast-degree .degree-num {
+      font-size: 60px;
+      color: rgba(0, 0, 0, 0.1);
+    }
+
+    .forecast .forecast-body .forecast-degree .degree-num + div img {
+      margin-top: 20px;
+      height: 6rem;
+    }
+    .forecast .forecast-body .custom {
+      font-size: 14px;
+      color: #009ad8;
+      margin-block: 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    .forecast {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .forecast {
+      width: calc(100% / 2);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .forecast {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+/* End main */
