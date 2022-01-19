@@ -1,7 +1,7 @@
 /* Start main */
 
 .main {
-  background: url("images/banner.png") no-repeat;
+  background: url("/images/banner.png") no-repeat;
   background-color: #1e202b;
   padding: 50px 0;
   form {
@@ -64,16 +64,8 @@
       background-color: #222530;
     }
 
-    .forecast:last-child .forecast-header {
-      border-top-right-radius: 10px;
-    }
-
     .forecast .forecast-body {
       height: 300px;
-    }
-
-    .forecast:first-child .forecast-body {
-      border-bottom-left-radius: 10px;
     }
 
     .forecast:first-child .forecast-body .forecast-info span {
@@ -116,10 +108,6 @@
       padding: 25px 20px;
     }
 
-    .forecast:last-child .forecast-body {
-      border-bottom-right-radius: 10px;
-    }
-
     .forecast .forecast-body .forecast-degree {
       margin-bottom: 1rem;
     }
@@ -150,20 +138,63 @@
       margin-block: 15px;
     }
   }
+
   @media (max-width: 767px) {
     .forecast {
       width: 100%;
     }
+
+    .forecast .forecast-body .forecast-degree .degree-num.today-degree  {
+      font-size: 5rem !important;
+    }
+
+    .forecast .forecast-body .forecast-degree .degree-num + div img{
+      height: 5rem !important;
+    }
+
+    .forecast:first-child .forecast-header {
+      border-top-right-radius: 10px;
+    }
+    .forecast:last-child .forecast-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
   }
+
   @media (min-width: 768px) and (max-width: 991px) {
     .forecast {
       width: calc(100% / 2);
+    }
+
+    .forecast:nth-child(2) .forecast-header {
+      border-top-right-radius: 10px;
+    }
+
+    .forecast:nth-child(2) .forecast-body {
+      border-bottom-right-radius: 10px;
+    }
+
+    .forecast:last-child .forecast-body {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
     }
   }
 
   @media (min-width: 992px) {
     .forecast {
       width: calc(100% / 3);
+    }
+
+    .forecast:first-child .forecast-body {
+      border-bottom-left-radius: 10px;
+    }
+
+    .forecast:last-child .forecast-header {
+      border-top-right-radius: 10px;
+    }
+
+    .forecast:last-child .forecast-body {
+      border-bottom-right-radius: 10px;
     }
   }
 }
