@@ -1,7 +1,7 @@
 /* Start header */
 
 header {
-  background-color: #1e202b;
+  background-color: $main-background-color;
   padding-block: 40px;
 
   .row {
@@ -79,8 +79,8 @@ header {
     
     a.active,
     a:hover {
-      color: #009ad8;
-      border-color: #009ad8;
+      color: $text-color;
+      border-color: $text-color;
     }
   }
 
@@ -134,7 +134,7 @@ header {
       display: block;
       border-radius: 0;
       border-color: transparent !important;
-      background-color: #262936;
+      background-color: $secondary-background-color;
       text-align: center;
     }
   }

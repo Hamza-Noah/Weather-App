@@ -1,12 +1,16 @@
+@import "colors";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
 body {
   font-family: Roboto, "Open Sans", sans-serif;
   overflow-x: hidden;
+  background-color: $main-background-color;
 }
 
 .container {

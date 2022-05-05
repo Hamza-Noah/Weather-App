@@ -2,7 +2,7 @@
 
 .main {
   background: url("../images/banner.png") no-repeat;
-  background-color: #1e202b;
+  background-color: $main-background-color;
   padding: 50px 0;
   form {
     position: relative;
@@ -14,7 +14,7 @@
       outline: none;
       padding: 20px;
       color: white;
-      background-color: #1e202b;
+      background-color: $main-background-color;
     }
     input:last-child {
       position: absolute;
@@ -25,10 +25,10 @@
       border-radius: 30px;
       border: none;
       outline: none;
-      background-color: #009ad8;
+      background-color: $text-color;
       color: white;
-      cursor: pointer;
       font-weight: lighter;
+      cursor: pointer;
     }
   }
   .forecasts {
@@ -134,7 +134,7 @@
     }
     .forecast .forecast-body .custom {
       font-size: 14px;
-      color: #009ad8;
+      color: $text-color;
       margin-block: 15px;
     }
   }

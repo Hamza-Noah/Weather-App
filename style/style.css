@@ -8,6 +8,7 @@
 body {
   font-family: Roboto, "Open Sans", sans-serif;
   overflow-x: hidden;
+  background-color: #1e202b;
 }
 
 .container {
@@ -262,8 +263,8 @@ header nav ul a:hover {
   outline: none;
   background-color: #009ad8;
   color: white;
-  cursor: pointer;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .main .forecasts .row {

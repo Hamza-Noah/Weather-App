@@ -18,7 +18,7 @@ footer {
       outline: none;
       padding: 20px;
       color: white;
-      background-color: #1e202b;
+      background-color: $main-background-color;
     }
     input:last-child {
       position: absolute;
@@ -29,7 +29,7 @@ footer {
       border-radius: 30px;
       border: none;
       outline: none;
-      background-color: #009ad8;
+      background-color: $text-color;
       color: white;
       cursor: pointer;
       font-weight: lighter;
@@ -43,10 +43,10 @@ footer {
       justify-content: end;
       list-style: none;
       i {
-        color: #009ad8 !important;
+        color: $text-color !important;
         font-size: 1.1rem !important;
         border-radius: 50%;
-        background-color: #1e202b;
+        background-color: $main-background-color;
         width: 40px;
         height: 40px;
         line-height: 40px;
