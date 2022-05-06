@@ -25,7 +25,7 @@
       border-radius: 30px;
       border: none;
       outline: none;
-      background-color: $text-color;
+      background-color: $blue-color;
       color: white;
       font-weight: lighter;
       cursor: pointer;
@@ -39,7 +39,7 @@
     }
 
     .forecast-header {
-      color: #bfc1c8;
+      color: $gray-color;
       font-weight: lighter;
       font-size: 14px;
       padding: 14px;
@@ -57,7 +57,7 @@
     .forecast:first-child .forecast-body .city {
       color: rgb(191, 193, 200);
       font-size: 18px;
-      margin-bottom: 2rem;
+      margin-bottom: 30px;
     }
 
     .forecast:nth-child(2) .forecast-header {
@@ -114,7 +114,7 @@
 
     .forecast .forecast-body .forecast-degree .degree-num.today-degree {
       color: white;
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 700;
     }
 
@@ -124,17 +124,17 @@
     }
 
     .forecast .forecast-body .forecast-degree .degree-num {
-      font-size: 60px;
       color: rgba(0, 0, 0, 0.1);
     }
 
-    .forecast .forecast-body .forecast-degree .degree-num + div img {
-      margin-top: 20px;
-      height: 6rem;
+    .forecast .forecast-body .forecast-degree .degree-num + div {
+      display: flex;
+      height: 150px;
     }
+
     .forecast .forecast-body .custom {
       font-size: 14px;
-      color: $text-color;
+      color: $blue-color;
       margin-block: 15px;
     }
   }
@@ -146,10 +146,6 @@
 
     .forecast .forecast-body .forecast-degree .degree-num.today-degree  {
       font-size: 5rem !important;
-    }
-
-    .forecast .forecast-body .forecast-degree .degree-num + div img{
-      height: 5rem !important;
     }
 
     .forecast:first-child .forecast-header {

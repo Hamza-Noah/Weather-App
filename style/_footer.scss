@@ -29,7 +29,7 @@ footer {
       border-radius: 30px;
       border: none;
       outline: none;
-      background-color: $text-color;
+      background-color: $blue-color;
       color: white;
       cursor: pointer;
       font-weight: lighter;
@@ -43,7 +43,7 @@ footer {
       justify-content: end;
       list-style: none;
       i {
-        color: $text-color !important;
+        color: $blue-color !important;
         font-size: 1.1rem !important;
         border-radius: 50%;
         background-color: $main-background-color;
@@ -56,7 +56,7 @@ footer {
     }
   }
   .rights {
-    color: #bfc1c8;
+    color: $gray-color;
     font-size: 14px;
   }
   @media (max-width: 767px) {

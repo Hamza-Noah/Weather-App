@@ -297,7 +297,7 @@ header nav ul a:hover {
 .main .forecasts .forecast:first-child .forecast-body .city {
   color: #bfc1c8;
   font-size: 18px;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .main .forecasts .forecast:nth-child(2) .forecast-header {
@@ -363,7 +363,7 @@ header nav ul a:hover {
 
 .main .forecasts .forecast .forecast-body .forecast-degree .degree-num.today-degree {
   color: white;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 
@@ -377,13 +377,14 @@ header nav ul a:hover {
 }
 
 .main .forecasts .forecast .forecast-body .forecast-degree .degree-num {
-  font-size: 60px;
   color: rgba(0, 0, 0, 0.1);
 }
 
-.main .forecasts .forecast .forecast-body .forecast-degree .degree-num + div img {
-  margin-top: 20px;
-  height: 6rem;
+.main .forecasts .forecast .forecast-body .forecast-degree .degree-num + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
 }
 
 .main .forecasts .forecast .forecast-body .custom {
@@ -398,9 +399,6 @@ header nav ul a:hover {
   }
   .main .forecast .forecast-body .forecast-degree .degree-num.today-degree {
     font-size: 5rem !important;
-  }
-  .main .forecast .forecast-body .forecast-degree .degree-num + div img {
-    height: 5rem !important;
   }
   .main .forecast:first-child .forecast-header {
     border-top-right-radius: 10px;
