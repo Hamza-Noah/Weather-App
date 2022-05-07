@@ -3,6 +3,9 @@
 header {
   background-color: $main-background-color;
   padding-block: 40px;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  transition: opacity 3s ease-out;
 
   .row {
     display: flex;
@@ -58,10 +61,10 @@ header {
     background-color: #05a2da;
   }
 
-  .toggle-button:hover  {
-    border-color:  #05a2da;
+  .toggle-button:hover {
+    border-color: #05a2da;
   }
-  
+
   nav ul {
     display: flex;
     list-style-type: none;
@@ -76,7 +79,7 @@ header {
       border-radius: 50px;
       border: solid 2px transparent;
     }
-    
+
     a.active,
     a:hover {
       color: $blue-color;
@@ -84,34 +87,43 @@ header {
     }
   }
 
+  nav {
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+  }
+
   @media (max-width: 767px) {
-    .row{
+    .row {
       flex-direction: column;
     }
 
-    .toggle-button{
+    .toggle-button {
       display: flex;
     }
 
-    nav{
-      display: none;
-      margin-top: 30px ;
+    nav {
+      margin-top: 30px;
+      // display: none;
+      height: 0;
+      opacity: 0;
     }
-    
-    nav.active{
-      display: flex;
+
+    nav.active {
+      // display: flex;
+      height: auto;
+      opacity: 1;
       align-items: center;
       justify-content: space-between;
-      // height: 200px;
     }
-    
-    nav ul{
+
+    nav ul {
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
     }
 
-    nav ul li:not(:last-child){
+    nav ul li:not(:last-child) {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -119,17 +131,17 @@ header {
       padding-left: 0px;
     }
 
-    nav ul li:first-child a{
+    nav ul li:first-child a {
       border-radius: 15px 15px 0 0;
     }
-    
-    nav ul li:last-child a{
+
+    nav ul li:last-child a {
       border-radius: 0 0 15px 15px;
     }
 
-    nav ul li a{
+    nav ul li a {
       padding-block: 15px;
-      font-size: .9rem;
+      font-size: 0.9rem;
       width: 100%;
       display: block;
       border-radius: 0;

@@ -64,6 +64,9 @@ body {
 header {
   background-color: #1e202b;
   padding-block: 40px;
+  -webkit-transition: opacity 1s ease-out;
+  -webkit-transition: opacity 3s ease-out;
+  transition: opacity 3s ease-out;
 }
 
 header .row {
@@ -167,6 +170,11 @@ header nav ul a:hover {
   border-color: #009ad8;
 }
 
+header nav {
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
 @media (max-width: 767px) {
   header .row {
     -webkit-box-orient: vertical;
@@ -180,13 +188,13 @@ header nav ul a:hover {
     display: flex;
   }
   header nav {
-    display: none;
     margin-top: 30px;
+    height: 0;
+    opacity: 0;
   }
   header nav.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: auto;
+    opacity: 1;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -218,7 +226,7 @@ header nav ul a:hover {
   }
   header nav ul li a {
     padding-block: 15px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 100%;
     display: block;
     border-radius: 0;
@@ -384,7 +392,7 @@ header nav ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 150px;
+  height: 100px;
 }
 
 .main .forecasts .forecast .forecast-body .custom {
