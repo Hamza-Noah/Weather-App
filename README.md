@@ -1,4 +1,4 @@
 # Weather-App
 
 
-This is a pure JavaScript and SCSS App that displays the weather for three days today, tomorrow and after tomorrow. this app is using the weather API database also it has the ability to search for the weather of a specific country
+This pure JavaScript and SCSS App displays the weather for three days today, tomorrow and after tomorrow. This app uses the weather API database and also has the ability to search for the temperature of a specific country
